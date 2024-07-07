@@ -77,6 +77,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 button:hover {
@@ -84,20 +86,14 @@ button:hover {
 }
 
 #trashCan {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #ff0000;
     color: #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 20%;
-    position: absolute;
-    bottom: 100px;
-    right: 0px;
-    z-index: 1000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
 }
+
 
 .logo {
     filter: invert(34%) sepia(15%) saturate(2210%) hue-rotate(226deg) brightness(104%) contrast(91%);
@@ -120,3 +116,16 @@ button:hover {
     z-index: 1000;
 }
 
+.inline {
+display: flex;
+justify-content: space-between;
+}
+
+@media (max-width: 1320px) {
+    .logo{
+      display: none;
+    }
+    .textlogo{
+        display: none;
+    }
+  }

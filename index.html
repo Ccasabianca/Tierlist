@@ -14,42 +14,44 @@
    <div><img src="Logo.svg" class="logo" alt="Logo">
         <p class="textlogo">Calamars Tierlist</p>
     </div>
-    <div id="trashCan" ondrop="drop(event)" ondragover="allowDrop(event)">Supprimer image</div>
     <div class="container">
         <h1 contenteditable="plaintext-only" class="title">Tier List</h1>
         <div id="tierList">
             <div class="tier-row" style="background-color: lightcoral;">
                 <span contenteditable="plaintext-only">S</span>
                 <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-paint-roller fa-xl"></i></button>
-                <button class="delete-row">Supprimer</button>
+                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
+                <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
             </div>
             <div class="tier-row" style="background-color: lightpink;">
                 <span contenteditable="plaintext-only">A</span>
                 <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
-                <button class="delete-row">Supprimer</button>
+                <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
             </div>
             <div class="tier-row" style="background-color: lightsteelblue;">
                 <span contenteditable="plaintext-only">B</span>
                 <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-brush fa-xl"></i></button>
-                <button class="delete-row">Supprimer</button>
+                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
+                <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
             </div>
             <div class="tier-row" style="background-color: lightskyblue;">
                 <span contenteditable="plaintext-only">C</span>
                 <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-pencil fa-xl"></i></button>
-                <button class="delete-row">Supprimer</button>
+                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
+                <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
             </div>
             <div class="tier-row" style="background-color: lightgreen;">
                 <span contenteditable="plaintext-only" accept="text">D</span>
                 <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-xl"></i></button>
-                <button class="delete-row">Supprimer</button>
+                <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
+                <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
             </div>
         </div>
+        <div class="inline">
         <button id="addRow">Ajouter une ligne</button>
+        <div id="trashCan" ondrop="drop(event)" ondragover="allowDrop(event)">Glisser image pour supprimer</div>
+    </div>
         <hr>
         <input type="file" accept="image/*" id="imageInput">
         <div id="imagePool" ondrop="drop(event)" ondragover="allowDrop(event)"></div>

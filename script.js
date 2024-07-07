@@ -4,10 +4,10 @@ document.getElementById('addRow').addEventListener('click', () => {
     newRow.className = 'tier-row';
     newRow.style.backgroundColor = 'lightgray';
     newRow.innerHTML = `
-        <span contenteditable="plaintext-only">New Tier</span>
+        <span contenteditable="plaintext-only">Nouveau</span>
         <div class="items" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <button class="change-color" onclick="openColorPicker(this)">Change Color</button>
-        <button class="delete-row">Delete Row</button>
+        <button class="change-color" onclick="openColorPicker(this)"><i class="fa-solid fa-palette fa-flip-horizontal fa-xl"></i></button>
+        <button class="delete-row"><i class="fa-solid fa-trash-can fa-xl"></i></button>
     `;
     tierList.appendChild(newRow);
 });
