@@ -9,6 +9,7 @@ body {
 
 .title {
 text-align: center;
+margin-right: 42%;
 }
 
 .container {
@@ -96,36 +97,12 @@ button:hover {
 
 
 .logo {
-    filter: invert(34%) sepia(15%) saturate(2210%) hue-rotate(226deg) brightness(104%) contrast(91%);
-    height: 100px;
-    width: 100px;  
-    position: absolute;
-    top: 20px;
-    left: 120px;
-    z-index: 1000;
+    height: 120px;
+    width: 120px;  
 }
 
-.textlogo {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #7B4FAB;
-    font-style: normal;
-    position: absolute;
-    top: 90px;
-    left: 110px;
-    z-index: 1000;
-}
 
 .inline {
 display: flex;
 justify-content: space-between;
 }
-
-@media (max-width: 1320px) {
-    .logo{
-      display: none;
-    }
-    .textlogo{
-        display: none;
-    }
-  }
